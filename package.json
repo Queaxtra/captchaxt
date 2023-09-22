@@ -1,0 +1,26 @@
+{
+  "name": "captchaxt",
+  "version": "1.0.0",
+  "description": "A CAPTCHA module made for Discord bot projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "captcha",
+    "discord bot",
+    "discord captcha",
+    "djs",
+    "dc bot",
+    "dc bot captcha",
+    "simple captcha",
+    "simple captcha discord bot",
+    "captcha module"
+  ],
+  "author": "Queaxtra",
+  "license": "MIT",
+  "dependencies": {
+    "cross-fetch": "^4.0.0",
+    "dotenv": "^16.3.1"
+  }
+}
