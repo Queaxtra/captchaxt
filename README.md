@@ -20,29 +20,34 @@ You can download the module using NPM or PNPM.
 const captchaxt = require('captchaxt');
 
 captchaxt.createCaptcha({
-    length: 6,
+    length: 10,
     type: 'string', // or number, default: string
-    uppercase: false,
-    canvas: {
-        opened: true, // default: false
-        color: 'white', // default: 'white'
-        background: 'transparent' // default: 'transparent'
+    uppercase: true,
+    canvasOptions: {
+        enabled: true,
+        textColor: 'white', // red, black, blue etc.
+        backgroundColor: 'transparent', // gray, red, green etc.
+        width: 1000,
+        height: 500
     }
 }).then(buffer => {
     console.log(buffer);
 });
+
 ```
+![Image](https://cdn.discordapp.com/attachments/1136591322208272385/1155471961800061009/brave_SFzZKgtZA0.png)
 
 - Creating a simple math CAPTCHA.
 ```js
 const captchaxt = require('captchaxt');
 
 captchaxt.mathCaptcha({
-    level: "easy" // easy, medium, hard
+    level: "easy" // or medium, hard
 }).then(captcha => {
     console.log(captcha);
 })
 ```
+![Image](https://cdn.discordapp.com/attachments/1136591322208272385/1155472512667361351/brave_JpDgnwTuCq.png)
 
 - Creating a simple question-answer CAPTCHA.
 
@@ -53,6 +58,7 @@ captchaxt.answerCaptcha().then(captcha => {
     console.log(captcha);
 })
 ```
+![Image](https://cdn.discordapp.com/attachments/1136591322208272385/1155473545925754970/brave_7d6MXS3VKE.png)
 ## ✨ Note
 Please contact us if you have encountered a bug or error.
 https://t.me/unoxdevs

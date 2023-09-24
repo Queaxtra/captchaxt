@@ -1,6 +1,6 @@
 {
   "name": "captchaxt",
-  "version": "1.5.0",
+  "version": "2.0.0",
   "description": "A CAPTCHA module made for Discord bot projects.",
   "main": "index.js",
   "scripts": {
@@ -22,6 +22,7 @@
   "dependencies": {
     "canvas": "^2.11.2",
     "cross-fetch": "^4.0.0",
+    "crypto": "^1.0.1",
     "dotenv": "^16.3.1"
   }
 }
