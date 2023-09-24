@@ -4,6 +4,10 @@
 A CAPTCHA module made for Discord bot projects.
 
 
+## ✨ Updates
+
+- Canvas option has been added; with this option, you can turn the CAPTCHA codes you create into a picture and personalize them as you wish.
+- Minor bugs fixed.
 ## 🛠 Installation
 
 You can download the module using NPM or PNPM.
@@ -16,12 +20,17 @@ You can download the module using NPM or PNPM.
 const captchaxt = require('captchaxt');
 
 captchaxt.createCaptcha({
-    length: 5,
-    type: "number", // string, number
-    uppercase: false
-}).then(captcha => {
-    console.log(captcha);
-})
+    length: 6,
+    type: 'string', // or number, default: string
+    uppercase: false,
+    canvas: {
+        opened: true, // default: false
+        color: 'white', // default: 'white'
+        background: 'transparent' // default: 'transparent'
+    }
+}).then(buffer => {
+    console.log(buffer);
+});
 ```
 
 - Creating a simple math CAPTCHA.
